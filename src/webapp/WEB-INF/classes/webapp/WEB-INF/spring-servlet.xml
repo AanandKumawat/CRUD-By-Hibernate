@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <!-- Manually enable annotation-driven handler mapping (2.5 style) -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    <!-- Enable scanning of @Controller, @Service, @Repository, @Component -->
+
+
+
+
+    <context:component-scan base-package="com.*"/>
+    <context:annotation-config  />
+
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="configLocations" >
+            <list><value>WEB-INF/hibernate.cfg.xml</value></list>
+        </property>
+        <property name="mappingLocations"  >
+            <list>
+                <value>WEB-INF/student.hbm.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Transaction Manager -->
+    <bean id="txManager"
+          class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+    <bean id="viewProvider" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+
+
+</beans>

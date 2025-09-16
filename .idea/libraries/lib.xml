@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/asm-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/cglib-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/commons-collections-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/hibernate-3.2.0.ga.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/javax.servlet-api-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/javax.transaction-api-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/jstl-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/mysql-connector-java-5.1.44-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-aop-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-beans-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-context-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-core-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-expression-3.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-jdbc-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-orm-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-tx-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-web-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/spring-webmvc-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/webapp/lib/antlr-2.7.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
